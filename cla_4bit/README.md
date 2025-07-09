@@ -33,11 +33,11 @@ This project implements a **4-bit Carry Lookahead Adder (CLA)** using Verilog an
 
 ##  Key Highlights
 
-> • Designed a 4-bit Carry Lookahead Adder from scratch using Verilog  
-> • Completed full **RTL to GDSII** flow using **Cadence Genus and Innovus**  
-> • Generated and analyzed **area, timing, DRC** and **physical layout** reports  
-> • Verified design using `hal` simulator and conducted structural linting  
-> • Produced **final GDSII file** and layout visualization with 20 std cells
+ • Designed a 4-bit Carry Lookahead Adder from scratch using Verilog  
+ • Completed full **RTL to GDSII** flow using **Cadence Genus and Innovus**  
+ • Generated and analyzed **area, timing, DRC** and **physical layout** reports  
+ • Verified design using `hal` simulator and conducted structural linting  
+ • Produced **final GDSII file** and layout visualization with 20 std cells
 
 ## References
 

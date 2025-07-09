@@ -1,0 +1,213 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/NIEECE/Desktop/arm_futures/CLA/cds.lib -logfile hal.log worklib.cla_4bit_tb:module.
+hal: Snapshot:  worklib.cla_4bit_tb:module.
+hal: Workspace: /home/NIEECE/Desktop/arm_futures/CLA.
+hal: Date: Wed Jul 02 17:02:38 IST 2025.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module cla_4bit_tb;
+|
+halcheck: *W,NEEDIO (./cla_4bit_tb.v,1|0): Top-level module 'cla_4bit_tb' has no inputs/outputs/inouts.
+    wire [3:0] sum;
+|
+halcheck: *W,STYVAL (./cla_4bit_tb.v,5|0): Numeric value '3' used for identifier 'sum'. Use constants to avoid portability issues.
+    reg  [3:0] a, b;
+|
+halcheck: *W,STYVAL (./cla_4bit_tb.v,3|0): Numeric value '3' used for identifier 'a'. Use constants to avoid portability issues.
+    initial begin
+|
+halcheck: *W,NOBLKN (./cla_4bit_tb.v,19|0): Each block should be labeled with a meaningful name.
+        $display("4-bit CLA Test Starting...");
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,20|0): System task $display in module 'cla_4bit_tb' is ignored.
+        a = 4'h3; b = 4'h5; cin = 0; #10;
+|
+halcheck: *W,SEPLIN (./cla_4bit_tb.v,23|0): Use a separate line for each HDL statement.
+        a = 4'h3; b = 4'h5; cin = 0; #10;
+|
+halcheck: *W,IMPDTC (./cla_4bit_tb.v,23|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit cla_4bit_tb.
+        a = 4'h3; b = 4'h5; cin = 0; #10;
+|
+halcheck: *W,INTTOB (./cla_4bit_tb.v,23|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit cla_4bit_tb.
+        a = 4'h3; b = 4'h5; cin = 0; #10;
+|
+halcheck: *W,TRUNCZ (./cla_4bit_tb.v,23|0): Truncation in constant conversion without a loss of bits in module/design-unit cla_4bit_tb.
+        a = 4'h3; b = 4'h5; cin = 0; #10;
+|
+halcheck: *W,EMPSTM (./cla_4bit_tb.v,23|0): Module 'cla_4bit_tb' contains an empty statement.
+        $display("3 + 5 = %h (cout=%b)", sum, cout);
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,24|0): System task $display in module 'cla_4bit_tb' is ignored.
+        a = 4'hF; b = 4'h1; cin = 0; #10;
+|
+halcheck: *W,SEPLIN (./cla_4bit_tb.v,26|0): Use a separate line for each HDL statement.
+        a = 4'hF; b = 4'h1; cin = 0; #10;
+|
+halcheck: *W,IMPDTC (./cla_4bit_tb.v,26|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit cla_4bit_tb.
+        a = 4'hF; b = 4'h1; cin = 0; #10;
+|
+halcheck: *W,INTTOB (./cla_4bit_tb.v,26|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit cla_4bit_tb.
+        a = 4'hF; b = 4'h1; cin = 0; #10;
+|
+halcheck: *W,TRUNCZ (./cla_4bit_tb.v,26|0): Truncation in constant conversion without a loss of bits in module/design-unit cla_4bit_tb.
+        a = 4'hF; b = 4'h1; cin = 0; #10;
+|
+halcheck: *W,EMPSTM (./cla_4bit_tb.v,26|0): Module 'cla_4bit_tb' contains an empty statement.
+        $display("F + 1 = %h (cout=%b)", sum, cout);
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,27|0): System task $display in module 'cla_4bit_tb' is ignored.
+        a = 4'h7; b = 4'h8; cin = 1; #10;
+|
+halcheck: *W,SEPLIN (./cla_4bit_tb.v,29|0): Use a separate line for each HDL statement.
+        a = 4'h7; b = 4'h8; cin = 1; #10;
+|
+halcheck: *W,IMPDTC (./cla_4bit_tb.v,29|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit cla_4bit_tb.
+        a = 4'h7; b = 4'h8; cin = 1; #10;
+|
+halcheck: *W,INTTOB (./cla_4bit_tb.v,29|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit cla_4bit_tb.
+        a = 4'h7; b = 4'h8; cin = 1; #10;
+|
+halcheck: *W,TRUNCZ (./cla_4bit_tb.v,29|0): Truncation in constant conversion without a loss of bits in module/design-unit cla_4bit_tb.
+        a = 4'h7; b = 4'h8; cin = 1; #10;
+|
+halcheck: *W,EMPSTM (./cla_4bit_tb.v,29|0): Module 'cla_4bit_tb' contains an empty statement.
+        $display("7 + 8 + 1 = %h (cout=%b)", sum, cout);
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,30|0): System task $display in module 'cla_4bit_tb' is ignored.
+        $display("Test completed!");
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,32|0): System task $display in module 'cla_4bit_tb' is ignored.
+        $finish;
+|
+halcheck: *W,BADSYS (./cla_4bit_tb.v,33|0): System task $finish in module 'cla_4bit_tb' is ignored.
+    cla_4bit dut (
+|
+halcheck: *N,IDLENG (./cla_4bit_tb.v,9|0): Identifier name 'dut' is not of appropriate length (4 to 16 characters).
+module cla_4bit (
+|
+halcheck: *N,PRTCNT (./cla_4bit.v,2|0): Module/Entity 'cla_4bit' contains '7' ports.
+halcheck: (./cla_4bit.v,2): Number of Input ports: 3.
+halcheck: (./cla_4bit.v,2): Number of Output ports: 4.
+    assign c[3] = g[2] | (p[2] & g[1]) | (p[2] & p[1] & g[0]) | (p[2] & p[1] & p[0] & c[0]);
+|
+halcheck: *W,MAXLEN (./cla_4bit.v,24|0): The HDL source line is 92 characters, which exceeds the recommended length of 80 characters.
+    assign cout = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]) | (p[3] & p[2] & p[1] & p[0] & c[0]);
+|
+halcheck: *W,MAXLEN (./cla_4bit.v,25|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+    assign gg = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]);
+|
+halcheck: *W,MAXLEN (./cla_4bit.v,31|0): The HDL source line is 90 characters, which exceeds the recommended length of 80 characters.
+    input  [3:0] a,      // 4-bit operand A
+|
+halcheck: *W,STYVAL (./cla_4bit.v,3|0): Numeric value '3' used for identifier 'a'. Use constants to avoid portability issues.
+    input  [3:0] b,      // 4-bit operand B  
+|
+halcheck: *W,STYVAL (./cla_4bit.v,4|0): Numeric value '3' used for identifier 'b'. Use constants to avoid portability issues.
+    output [3:0] sum,    // 4-bit sum
+|
+halcheck: *W,STYVAL (./cla_4bit.v,6|0): Numeric value '3' used for identifier 'sum'. Use constants to avoid portability issues.
+    wire [3:0] g, p;
+|
+halcheck: *W,STYVAL (./cla_4bit.v,13|0): Numeric value '3' used for identifier 'g'. Use constants to avoid portability issues.
+    wire [3:0] c;  // internal carries
+|
+halcheck: *W,STYVAL (./cla_4bit.v,14|0): Numeric value '3' used for identifier 'c'. Use constants to avoid portability issues.
+    wire       cout, pg, gg;
+|
+halcheck: *W,URDWIR (./cla_4bit_tb.v,6|0): Wire 'pg' defined in module 'cla_4bit_tb' does not drive any object, but is assigned at least once.
+    wire       cout, pg, gg;
+|
+halcheck: *W,URDWIR (./cla_4bit_tb.v,6|0): Wire 'gg' defined in module 'cla_4bit_tb' does not drive any object, but is assigned at least once.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 35.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+    initial begin
+|
+halsynth: *W,INIUSP (./cla_4bit_tb.v,19|0): Module cla_4bit_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+    cla_4bit dut (
+|
+halstruct: *E,UNCONI (./cla_4bit_tb.v,9|0): Input port 'a' of entity/module 'cla_4bit' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+halstruct: (./cla_4bit_tb.v,9): 'a[3:0]' mapped to actual expression 'a' which is undriven.
+    cla_4bit dut (
+|
+halstruct: *E,UNCONI (./cla_4bit_tb.v,9|0): Input port 'b' of entity/module 'cla_4bit' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+halstruct: (./cla_4bit_tb.v,9): 'b[3:0]' mapped to actual expression 'b' which is undriven.
+    cla_4bit dut (
+|
+halstruct: *E,UNCONI (./cla_4bit_tb.v,9|0): Input port 'cin' of entity/module 'cla_4bit' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+halstruct: (./cla_4bit_tb.v,9): 'cin' mapped to actual expression 'cin' which is undriven.
+    cla_4bit dut (
+|
+halstruct: *W,UNCONO (./cla_4bit_tb.v,9|0): Port 'sum' (which is being used as an output) of entity/module 'cla_4bit' is being driven inside the design, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+    cla_4bit dut (
+|
+halstruct: *W,UNCONO (./cla_4bit_tb.v,9|0): Port 'cout' (which is being used as an output) of entity/module 'cla_4bit' is being driven inside the design, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+    cla_4bit dut (
+|
+halstruct: *W,UNCONO (./cla_4bit_tb.v,9|0): Port 'pg' (which is being used as an output) of entity/module 'cla_4bit' is being driven inside the design, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+    cla_4bit dut (
+|
+halstruct: *W,UNCONO (./cla_4bit_tb.v,9|0): Port 'gg' (which is being used as an output) of entity/module 'cla_4bit' is being driven inside the design, but not connected (either partially or completely) in its instance 'cla_4bit_tb.dut'.
+    assign sum = p ^ c;
+|
+halstruct: *W,SYNPRT (./cla_4bit.v,28|0): Output port 'sum' is assigned asynchronously.
+    assign cout = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]) | (p[3] & p[2] & p[1] & p[0] & c[0]);
+|
+halstruct: *W,SYNPRT (./cla_4bit.v,25|0): Output port 'cout' is assigned asynchronously.
+    assign pg = p[3] & p[2] & p[1] & p[0];
+|
+halstruct: *W,SYNPRT (./cla_4bit.v,32|0): Output port 'pg' is assigned asynchronously.
+    assign gg = g[3] | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]);
+|
+halstruct: *W,SYNPRT (./cla_4bit.v,31|0): Output port 'gg' is assigned asynchronously.
+module cla_4bit_tb;
+|
+halstruct: *N,NUMDFF (./cla_4bit_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 3.
+halstruct: Total warnings = 8.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (3)
+  UNCONI (3)     
+
+ Warnings : (44)
+  BADSYS (6)      EMPSTM (3)      IMPDTC (3)      INIUSP (1)     
+  INTTOB (3)      MAXLEN (3)      NEEDIO (1)      NOBLKN (1)     
+  SEPLIN (3)      STYVAL (7)      SYNPRT (4)      TRUNCZ (3)     
+  UNCONO (4)      URDWIR (2)     
+
+ Notes    : (3)
+  IDLENG (1)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/NIEECE/Desktop/arm_futures/CLA/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

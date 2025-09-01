@@ -4,7 +4,7 @@ This project implements a **4-bit Carry Lookahead Adder (CLA)** using Verilog an
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 - **Design**: CLA (4-bit)
 - **Language**: Verilog
